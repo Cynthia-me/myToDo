@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width,initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel = "stylesheet" href = "/UI/myToDo.css">
+        <title>MY-TO-DO-APP</title>
+    </head>
+
+    <body>
+        <div class = "main_container">
+            <div class = "title">
+                <h2>MY TO DO</h2>
+                <input type = "text" id = "intext" placeholder="I have to ..." >
+                <span onclick="newList()" class="addbtn">ADD</span>
+                
+            </div>
+            
+                <ul id = "myList">
+                    <li class = "checked">Sample</li>
+                    <li>Go to church</li>
+                    <li>Drink morning detox</li>
+                    <li>Code</li>
+                    <li>Workout</li>
+                </ul>
+            
+        </div>
+        <script src = "/Scripts/myToDo.js"></script>
+    </body>
+</html>

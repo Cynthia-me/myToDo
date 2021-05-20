@@ -1,0 +1,97 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+}
+.main_container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  }
+
+ul{
+  margin-top: 2rem;
+}
+ul li{
+  padding: 1rem;
+  list-style-type: none;
+  /* border: 2px solid black; */
+  width: 60vw;
+  color: rgb(241, 185, 112);
+  font-size: 1.2rem;
+  font-family: cursive;
+  cursor: pointer;
+  /* -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; */
+}
+
+ul li:nth-child(odd){
+  background-color: #2c2b2b;
+}
+#intext{
+  height: 45px;
+  width: 40vw;
+  margin-left: 60px;
+  font-size: 1rem;
+}
+
+.addbtn{
+  margin: 0;
+  padding: 9px;
+  width: 5vw;
+  text-align: center;
+  cursor: pointer;
+  color: rgb(241, 185, 112);
+  background-color:rgb(41, 40, 40);
+}
+.addbtn:hover {
+  background-color: rgb(44, 44, 44);
+}
+h2{
+  font-family: "MV boli";
+  text-align: center;
+  color: rgb(241, 185, 112);
+  font-size: 1.5rem;
+  font-weight: 1000;
+}
+
+.close{
+  float: right;
+  color:rgb(228, 159, 69) ;
+}
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+/* ul li.checked ::before{
+  content: '';
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  transform: rotate(45deg);
+  border-color: white;
+  position: absolute;
+  top: 160px;
+  left:300px;
+  height: 15px;
+  width: 7px;
+} */
+
+@media screen and (max-width:1000px) {
+ ul li,.addbtn,#intext{
+   font-size: 2rem;
+ }
+ #intext{
+   height: 5vh;
+ }
+}
+
+@media screen and (max-width:450px){
+  ul li,.addbtn,#intext{
+    font-size: 0.8rem;
+  }
+}
